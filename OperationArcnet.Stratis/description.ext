@@ -1,0 +1,63 @@
+allowFunctionsLog = 0;
+OnLoadName = Operation Arcnet
+Author = Cytreen Spiegel
+OnLoadMission = Unit S.P.E.C.T.R.E. is tasked with infiltrating Mike-Air Station 26 and downloading vital Intel from their computer system.
+gameType = COOP;
+minPlayers = 1;
+maxPlayer = 16;
+Respawn = 3;
+RespawnDelay = 1;
+RespawnDialog = 0;
+
+enableDebugConsole = 1;
+disabledAI = 1;
+
+#include "scripts\downloadData.hpp"
+
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class endMusic
+	{
+		name = "";
+		sound[] = {"\audio\music\ending.ogg", db+0, 1.0};
+	};
+};
+
+
+
+class CfgSounds
+{
+	sounds[] = {};
+	class air_raid_sound
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "air_raid_sound";
+		// filename, volume, pitch
+		sound[] = {"audio\sounds\air_raid.wss", 38, 1, 300};
+		titles[] = {};
+	};
+};
+
+
+class CfgSFX
+{
+	sounds[] = {};
+	class fx_Generator
+	{
+		name = "fx_Generator";
+		sounds[]={fx_Generator};
+		fx_Generator[]={"audio\sounds\generator.ogg" ,1,1,100,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+	
+	class fx_Transformer
+	{
+		name = "fx_Transformer";
+		sounds[]={fx_Transformer};
+		fx_Transformer[]={"audio\sounds\transformerLQ.ogg" ,5,1,100,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+};

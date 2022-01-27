@@ -1,0 +1,1 @@
+[] execVM "module_performance\init.sqf";
