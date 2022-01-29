@@ -1,7 +1,7 @@
 enableSaving [ false, false ];
 if (isServer) then { sling_1 = ch1 setSlingLoad ab1; };
 //waituntil {(player getvariable ["alive_sys_player_playerloaded",false])};
-//[{{Driver _x setvariable ["NOAI",true];} foreach (vehicles select {_x isKindOf 'air'});}, 1, []] call CBA_fnc_addPerFrameHandler;
+[{{Driver _x setvariable ["NOAI",true];} foreach (vehicles select {_x isKindOf 'air'});}, 1, []] call CBA_fnc_addPerFrameHandler;
 // Grou Alpha
 vehicleAlpha = "ch1" createvehicle [0,0,0];
 vehicleAlpha2 = "ab1" createvehicle [0,0,0];
@@ -28,7 +28,7 @@ _colorEast = EAST call BIS_fnc_sideColor;
     ]
 ] spawn BIS_fnc_establishingShot;
 
-//{_x moveInCargo ch1} foreach units grpAlpha;
+{_x moveInCargo ch1} foreach units grpAlpha;
 //{_x moveInCargo ch2} foreach units grpBravo;
 
 
