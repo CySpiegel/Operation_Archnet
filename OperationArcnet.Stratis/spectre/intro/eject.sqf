@@ -8,7 +8,7 @@ if ( (typename _group != "GROUP") or (typename _vehicle != "OBJECT") ) exitwith 
 //{_x allowDamage false} foreach units grpBravo;
 sleep 1;
 14 cutText ["","BLACK out", 0.3];
-titleText ["T  r  a  n  s  f  e  r  r  i  n  g    T  o    B  o  a  t  ", "PLAIN", 0.55];
+titleText ["T  r  a  n  s  f  e  r  r  i  n  g    T  o    B  o  a  t  ", "PLAIN", 0.9];
 sleep 1;
 {
 	unassignvehicle _x;

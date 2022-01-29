@@ -1,1 +1,1 @@
-[] execVM "module_performance\init.sqf";
+//[] execVM "module_performance\init.sqf";
