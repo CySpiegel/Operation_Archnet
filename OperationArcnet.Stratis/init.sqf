@@ -28,7 +28,7 @@ _colorEast = EAST call BIS_fnc_sideColor;
     ]
 ] spawn BIS_fnc_establishingShot;
 
-{_x moveInCargo ch1} foreach units grpAlpha;
+//{_x moveInCargo ch1} foreach units grpAlpha;
 //{_x moveInCargo ch2} foreach units grpBravo;
 
 
