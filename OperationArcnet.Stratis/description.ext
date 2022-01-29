@@ -18,7 +18,6 @@ disabledAI = 1;
 class CfgMusic
 {
 	tracks[]={};
-
 	class endMusic
 	{
 		name = "";
