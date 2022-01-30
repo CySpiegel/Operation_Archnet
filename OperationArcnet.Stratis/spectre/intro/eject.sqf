@@ -20,6 +20,7 @@ sleep 1;
 titleText ["T  r  a  n  s  f  e  r  r  i  n  g    T  o    B  o  a  t  ", "PLAIN", 0.35];
 sleep 10;
 14 cutFadeout 1;
+sleep 10;
 {_x allowDamage true} foreach units grpAlpha;
 //{_x allowDamage true} foreach units grpBravo;
 //Optional Safety height function (copy and paste after the _vehicle declaration in eject.sqf;
