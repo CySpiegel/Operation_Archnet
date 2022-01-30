@@ -4,7 +4,7 @@
 _Raider_1 = [];
 _extractChopper_1 = [];
 
-if (isServer) then {
+//if (isServer) then {
 	_Raider_1 = createGroup WEST;
 	_extractChopper_1 = [getMarkerPos "extractionSpawn_1", 0, "B_Heli_Transport_03_F", _Raider_1] call BIS_fnc_spawnVehicle;
 
@@ -23,7 +23,7 @@ if (isServer) then {
 	_wp1 setWaypointSpeed "FULL";
 
 
-};
+//};
 
 
 sleep 20;
@@ -68,15 +68,17 @@ waitUntil {camCommitted _cameraExit};
 titleText ["E  p  i  s  o  d  e    O  n  e \nO  P  E  R  A  T  I  O  N    |    A  R  C  N  E  T", "PLAIN", 0.35];
 sleep 3.5;
 detach _cameraExit;
-if (isServer) then {
+//if (isServer) then {
 	_car flyInHeight 10;
+	_success = [extractChopperGlobal, ab1] remoteExec ["setSlingLoad"];
 	_success = extractChopperGlobal setslingload ab1;
 	_wp2 = _Raider_1 addWaypoint [position exitMission, 2];
 	_wp2 setWaypointType 'MOVE';
 	_wp2 setWaypointSpeed "Limited";
 
 
-};
+//};
+//_success = [extractChopperGlobal, ab1] remoteExec ["setSlingLoad"];
 _success = extractChopperGlobal setslingload ab1;
 titleText ["S.  P.  E.  C.  T.  R.  E.", "PLAIN", 0.35];
 sleep 3.5;
