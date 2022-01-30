@@ -7,7 +7,7 @@ if ( (typename _group != "GROUP") or (typename _vehicle != "OBJECT") ) exitwith 
 {_x allowDamage false} foreach units grpAlpha;
 //{_x allowDamage false} foreach units grpBravo;
 sleep 1;
-14 cutText ["","BLACK out", 0.3];
+14 cutText ["","BLACK out", 0.1];
 titleText ["T  r  a  n  s  f  e  r  r  i  n  g    T  o    B  o  a  t  ", "PLAIN", 0.35];
 sleep 1;
 {
@@ -18,9 +18,8 @@ sleep 1;
 //	{_x moveInCargo ab2} foreach units grpBravo;
 } foreach units _group;
 titleText ["T  r  a  n  s  f  e  r  r  i  n  g    T  o    B  o  a  t  ", "PLAIN", 0.35];
-sleep 5;
+sleep 10;
 14 cutFadeout 1;
-sleep 20;
 {_x allowDamage true} foreach units grpAlpha;
 //{_x allowDamage true} foreach units grpBravo;
 //Optional Safety height function (copy and paste after the _vehicle declaration in eject.sqf;
