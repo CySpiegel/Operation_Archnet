@@ -71,7 +71,7 @@ detach _cameraExit;
 //if (isServer) then {
 	_car flyInHeight 10;
 	_success = [extractChopperGlobal, ab1] remoteExec ["setSlingLoad"];
-	_success = extractChopperGlobal setslingload ab1;
+	//_success = extractChopperGlobal setslingload ab1;
 	_wp2 = _Raider_1 addWaypoint [position exitMission, 2];
 	_wp2 setWaypointType 'MOVE';
 	_wp2 setWaypointSpeed "Limited";
@@ -79,7 +79,7 @@ detach _cameraExit;
 
 //};
 //_success = [extractChopperGlobal, ab1] remoteExec ["setSlingLoad"];
-_success = extractChopperGlobal setslingload ab1;
+//_success = extractChopperGlobal setslingload ab1;
 titleText ["S.  P.  E.  C.  T.  R.  E.", "PLAIN", 0.35];
 sleep 3.5;
 titleText ["A       C.    S  p  i  e  g  e  l      P  r  o  d  u  c  t  i  o  n ", "PLAIN", 0.35];
@@ -88,7 +88,7 @@ sleep 3.5;
 titleText ["A  R  M  A    3", "PLAIN", 0.35];
 //CutText ["","Black Faded"];
 sleep 3.5;
-titleText ["S  P  E  C  I  A  L    |    T  H  A  N  K  S \n A r m a   3    C o m m u n i t y  \nA r m a  3    D i s c o r d \nand all of the mod makers without them this mission would not be possable ", "PLAIN", 0.5];
+titleText ["S  P  E  C  I  A  L    |    T  H  A  N  K  S \n A r m a   3    C o m m u n i t y  \nA r m a  3    D i s c o r d \nand all of the mod makers without them this mission would not be possable ", "PLAIN", 0.35];
 sleep 5.5;
 //CutText ["","Black Faded"];
 1 cutFadeout 1;
