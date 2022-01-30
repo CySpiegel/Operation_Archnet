@@ -9,4 +9,4 @@ while {alive player && alive _this} do {
 		_selectedBodyPart = selectRandom _bodyparts;
 		[player, 0.8, _selectedBodyPart, "stab"] call ace_medical_fnc_addDamageToUnit;
 	};   
-};           
+};
