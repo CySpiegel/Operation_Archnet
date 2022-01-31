@@ -11,9 +11,11 @@ _duration = _delay * 1.5;
 	_title = [_x,0,""] call bis_fnc_paramin;
 	_names = _x select 1;
 	_text = format ["<t font='PuristaBold'>%1</t>",toUpper (_title)] + "<br />";
+	
 	{
 		_text = _text + _x + "<br />";
 	} foreach _names;
+
 	_text = format ["<t size='0.8'>%1</t>",_text];
 	_index = _foreachindex % 2;
 	_layer = _layers select _index;
