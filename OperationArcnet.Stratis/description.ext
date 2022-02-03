@@ -59,4 +59,6 @@ class CfgSFX
 		fx_Transformer[]={"audio\sounds\transformerLQ.ogg" ,5,1,100,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
+
+	
 };
