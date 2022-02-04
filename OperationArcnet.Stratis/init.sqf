@@ -17,7 +17,7 @@ _colorEast = EAST call BIS_fnc_sideColor;
 {_x set [3, 0.73]} forEach [_colorWest, _colorEast];
 [
     markerPos "orbit1", // Target position (replace MARKERNAME)
-    "Unit S.P.E.C.T.R.E. is tasked with infiltrating Mike-Air Station 26 and downloading vital Intel from their computer system.", // SITREP text
+    "Unit S.P.E.C.T.R.E. is tasked with infiltrating Air Station Mike-26 and transfer data from their computer system.", // SITREP text
     400,                    // 400m altitude
     200,                    // 200m radius
     0,                      // 0 degrees viewing angle
