@@ -1,7 +1,7 @@
 allowFunctionsLog = 0;
 OnLoadName = Operation Arcnet
 Author = Cytreen Spiegel
-OnLoadMission = Unit S.P.E.C.T.R.E. is tasked with infiltrating Mike-Air Station 26 and downloading vital Intel from their computer system.
+OnLoadMission = Unit S.P.E.C.T.R.E. is tasked with infiltrating Air Station Mike-26 and downloading vital Intel from their computer system.
 gameType = COOP;
 minPlayers = 1;
 maxPlayer = 16;

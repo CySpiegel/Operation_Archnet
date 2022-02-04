@@ -41,11 +41,11 @@
 
 T8L_var_fileSize = 25687;  								// Filesize ... smaller files will take shorter time to download!
 
-T8L_var_TLine01 = "Download Aborted!";				// download aborted
-T8L_var_TLine02 = "Download already in progress by someone else";			// download already in progress by someone else
-T8L_var_TLine03 = "Download Started!";				// download started
-T8L_var_TLine04 = "Download Finished!";			// download finished
-T8L_var_TLine05 = "##  Download Data  ##";				// line for the addaction
+T8L_var_TLine01 = "Transfer Aborted!";				// download aborted
+T8L_var_TLine02 = "Transfer already in progress by someone else";			// download already in progress by someone else
+T8L_var_TLine03 = "Transfer Started!";				// download started
+T8L_var_TLine04 = "Transfer Finished!";			// download finished
+T8L_var_TLine05 = "##  Transfer Data  ##";				// line for the addaction
 T8L_var_TLine06 = "Connecting ...";
 T8L_var_TLine07 = "Connected:";
 
