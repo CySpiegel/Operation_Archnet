@@ -15,11 +15,12 @@ _objectadd = [];
 } forEach allGroups;
 _hcselect = 0;
 { //Actually adding units to HCS, and round robin-ing between different HCs
-	if (HCIDList select _hcselect) == null ) then { _hcselect = 0; };
+	if ((HCIDList select _hcselect) == null ) then { _hcselect = 0; };
 	_x setGroupOwner (HCIDList select _hcselect);
 	_hcselect = _hcselect + 1;
 	_x setVariable ["UnitCheck",true,true];
-}; forEach _objectadd;
+} forEach _objectadd;
+
 _finalcount = count _objectadd;
 _finaltime = diag_tickTime - _1sttime;
 if (HCDebug == 1) then {
